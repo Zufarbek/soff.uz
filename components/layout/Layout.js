@@ -3,6 +3,7 @@ import BackToTop from '../elements/BackToTop';
 import Footer from './Footer';
 import Header from './Header';
 import Sidebar from './Sidebar';
+import 'react-toastify/dist/ReactToastify.css'
 
 const Layout = ({ children }) => {
     const [openClass, setOpenClass] = useState('');

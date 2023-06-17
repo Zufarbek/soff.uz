@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 function SwitchButton() {
-  const [isChecked, setIsChecked] = useState(true);
+  const [isChecked, setIsChecked] = useState(false);
 
   function handleChange() {
     setIsChecked(!isChecked);

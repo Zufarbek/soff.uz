@@ -4,135 +4,136 @@
     float: left;
     width: 100%;
     position: relative;
-    .main-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        width: 100%;
-        padding: 5px 0px;
-        .header-logo {
-            max-width: 150px;
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
             width: 100%;
-            a {
-                display: block;
-                img {
-                    min-height: 37px;
-                }
-            }
-        }
-        .header-nav {
-            display: inline-block;
-            width: 65%;
-            text-align: center;
-        }
-        .header-search {
-            width: 35%;
-            .box-header-search {
-                border-radius: 8px;
-                border: 1px solid $color-border-1;
-                padding: 5px;
-                .form-search {
-                    display: flex;
-                }
-                .box-keysearch {
-                    width: 100%;
-                    input {
-                        border: 0px !important;
-                    }
-                }
-                .box-category {
-                    position: relative;
-                    margin-right: 15px;
-                    min-width: 120px;
-                    &::before {
-                        content: "";
-                        height: 14px;
-                        width: 1px;
-                        background-color: #EBF0F3;
-                        position: absolute;
-                        top: 8px;
-                        right: -14px;
-                    }
-                    select {
-                        height: 100%;
-                        width: 100%;
-                        border: 0px;
-                        padding: 0px 20px 0px 5px;
-                        border-radius: 8px;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-                        background-image: url(../imgs/template/arrow-down.svg);
-                        background-position: right center;
-                        background-repeat: no-repeat;
+            padding: 5px 0px;
+            .header-logo {
+                max-width: 150px;
+                width: 100%;
+                a {
+                    display: block;
+                    img {
+                        min-height: 37px;
                     }
                 }
             }
-        }
-        .header-shop {
-            width: 35%;
-            text-align: right;
-            .icon-list {
+            .header-nav {
                 display: inline-block;
-                padding: 0px 15px 0px 30px;
-                background-repeat: no-repeat;
-                background-position: 0px -1px;
-                position: relative;
-                font-size: 16px;
-                color: $color-brand-3;
-                line-height: 24px;
-                cursor: pointer;
-                &:hover {
-                    color: $color-black;
-                }
-                &:last-child {
-                    padding-right: 0px;
-                }
-                img {
-                    float: left;
-                    margin: 3px 6px 0px 0px;
-                }
-            }
-            .icon-account {
-                background-image: url(../imgs/template/account.svg);
-            }
-            .icon-wishlist {
-                background-image: url(../imgs/template/wishlist.svg);
-                background-position: 0px 2px;
-                padding-left: 35px;
-            }
-            .icon-cart {
-                background-image: url(../imgs/template/cart.svg);
-                background-position: 0px 2px;
-                padding-left: 35px;
-            }
-            .icon-compare {
-                background-image: url(../imgs/template/compare.svg);
-                background-position: 0px 2px;
-            }
-            .number-item {
-                background-color: $color-brand-2;
-                border-radius: 50%;
-                position: absolute;
-                top: -8px;
-                left: 14px;
-                width: 20px;
-                height: 20px;
-                color: $color-white;
+                width: 65%;
                 text-align: center;
-                line-height: 20px;
-                display: inline-block;
             }
-        }
-        .header-right {
-            max-width: 225px;
-            width: 100%;
-            .block-signin {
+            .header-search {
+                width: 35%;
+                .box-header-search {
+                    border-radius: 8px;
+                    border: 1px solid $color-border-1;
+                    padding: 5px;
+                    .form-search {
+                        display: flex;
+                    }
+                    .box-keysearch {
+                        width: 100%;
+                        input {
+                            border: 0px !important;
+                        }
+                    }
+                    .box-category {
+                        position: relative;
+                        margin-right: 15px;
+                        min-width: 120px;
+                        &::before {
+                            content: "";
+                            height: 14px;
+                            width: 1px;
+                            background-color: #EBF0F3;
+                            position: absolute;
+                            top: 8px;
+                            right: -14px;
+                        }
+                        select {
+                            height: 100%;
+                            width: 100%;
+                            border: 0px;
+                            padding: 0px 20px 0px 5px;
+                            border-radius: 8px;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            background-image: url(../imgs/template/arrow-down.svg);
+                            background-position: right center;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+            }
+            .header-shop {
+                width: 35%;
                 text-align: right;
+                .icon-list {
+                    display: inline-block;
+                    padding: 0px 15px 0px 30px;
+                    background-repeat: no-repeat;
+                    background-position: 0px -1px;
+                    position: relative;
+                    font-size: 16px;
+                    color: $color-brand-3;
+                    line-height: 24px;
+                    cursor: pointer;
+                    &:hover {
+                        color: $color-black;
+                    }
+                    &:last-child {
+                        padding-right: 0px;
+                    }
+                    img {
+                        float: left;
+                        margin: 3px 6px 0px 0px;
+                    }
+                }
+                .icon-account {
+                    background-image: url(../imgs/template/account.svg);
+                }
+                .icon-wishlist {
+                    background-image: url(../imgs/template/wishlist.svg);
+                    background-position: 0px 2px;
+                    padding-left: 35px;
+                }
+                .icon-cart {
+                    background-image: url(../imgs/template/cart.svg);
+                    background-position: 0px 2px;
+                    padding-left: 35px;
+                }
+                .icon-compare {
+                    background-image: url(../imgs/template/compare.svg);
+                    background-position: 0px 2px;
+                }
+                .number-item {
+                    background-color: $color-brand-2;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -8px;
+                    left: 14px;
+                    width: 20px;
+                    height: 20px;
+                    color: $color-white;
+                    text-align: center;
+                    line-height: 20px;
+                    display: inline-block;
+                }
+            }
+            .header-right {
+                max-width: 225px;
+                width: 100%;
+                background-color: red !important;
+                .block-signin {
+                    text-align: right;
+                }
             }
         }
-    }
     .nav-main-menu {
         width: auto;
         padding: 0px;

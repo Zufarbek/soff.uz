@@ -7,7 +7,7 @@ export default function Main() {
     return (
         <>
             <Head>
-                <title>Genz - Home 2</title>
+                <title>Soff - Home 1</title>
             </Head>
             <Layout>
                 <div className="cover-home1">
@@ -28,43 +28,43 @@ export default function Main() {
                                         <ul className="list-tags-col-5 mb-50 text-center">
                                             <li>
                                                 <div className="card-style-2 hover-up hover-neon wow animate__animated animate__fadeInUp" data-wow-delay="0s">
-                                                    <div className="card-image"><Link href="/blog-archive"><img src="assets/imgs/page/homepage1/tag2.png" alt="Genz" /></Link></div>
+                                                    <div className="card-image"><Link href="/blog-archive"><img src="https://w7.pngwing.com/pngs/87/586/png-transparent-next-js-hd-logo.png" alt="Genz" /></Link></div>
                                                     <div className="card-info"><Link className="color-gray-500" href="/blog-archive">React/Next.js</Link></div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="card-style-2 hover-up hover-neon wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-                                                    <div className="card-image"><Link href="/blog-archive"><img src="assets/imgs/page/homepage1/tag2.png" alt="Genz" /></Link></div>
+                                                    <div className="card-image"><Link href="/blog-archive"><img src="https://develop365.gitlab.io/nuxtjs-2.8.X-doc/en/logos/nuxt-icon-white.png" alt="Genz" /></Link></div>
                                                     <div className="card-info"><Link className="color-gray-500" href="/blog-archive">Vue/Nuxt.js</Link></div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="card-style-2 hover-up hover-neon wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-                                                    <div className="card-image"><Link href="/blog-archive"><img src="assets/imgs/page/homepage1/tag3.png" alt="Genz" /></Link></div>
+                                                <div className="card-image"><Link href="/blog-archive"><img src="https://w7.pngwing.com/pngs/702/915/png-transparent-ruby-on-rails-round-logo-tech-companies-thumbnail.png" alt="Genz" /></Link></div>
                                                     <div className="card-info"><Link className="color-gray-500" href="/blog-archive">React/Rails</Link></div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="card-style-2 hover-up hover-neon wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-                                                    <div className="card-image"><Link href="/blog-archive"><img src="assets/imgs/page/homepage1/tag4.png" alt="Genz" /></Link></div>
+                                                    <div className="card-image"><Link href="/blog-archive"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" alt="Genz" /></Link></div>
                                                     <div className="card-info"><Link className="color-gray-500" href="/blog-archive">Node.js</Link></div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="card-style-2 hover-up hover-neon wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
-                                                    <div className="card-image"><Link href="/blog-archive"><img src="assets/imgs/page/homepage1/tag5.png" alt="Genz" /></Link></div>
+                                                    <div className="card-image"><Link href="/blog-archive"><img src="https://pbs.twimg.com/profile_images/1110148780991623201/vlqCsAVP_400x400.png" alt="Genz" /></Link></div>
                                                     <div className="card-info"><Link className="color-gray-500" href="/blog-archive">Nest.js</Link></div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="card-style-2 hover-up hover-neon wow animate__animated animate__fadeInUp" data-wow-delay="0.0s">
-                                                    <div className="card-image"><Link href="/blog-archive"><img src="assets/imgs/page/homepage1/tag7.png" alt="Genz" /></Link></div>
+                                                    <div className="card-image"><Link href="/blog-archive"><img src="https://e7.pngegg.com/pngimages/969/723/png-clipart-functional-programming-in-python-computer-programming-programming-language-python-programming-practice-workshop-program-logo-text-logo-thumbnail.png" alt="Genz" /></Link></div>
                                                     <div className="card-info"><Link className="color-gray-500" href="/blog-archive">Python</Link></div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="card-style-2 hover-up hover-neon wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-                                                    <div className="card-image"><Link href="/blog-archive"><img src="assets/imgs/page/homepage1/tag8.png" alt="Genz" /></Link></div>
+                                                    <div className="card-image"><Link href="/blog-archive"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5eyjb_pXW0uQc3z5RZz6LxVdO_Otv1dEF5g&usqp=CAU" alt="Genz" /></Link></div>
                                                     <div className="card-info"><Link className="color-gray-500" href="/blog-archive">SQL/NoSQL</Link></div>
                                                 </div>
                                             </li>

@@ -2415,12 +2415,13 @@ input {
   margin-top: 15px;
   float: left;
   width: 100%;
+  justify-content: space-evenly;
   position: relative;
 }
 .header .main-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
   position: relative;
   width: 100%;
   padding: 5px 0px;
@@ -2533,8 +2534,17 @@ input {
   display: inline-block;
 }
 .header .main-header .header-right {
-  max-width: 225px;
+  max-width: 300px;
   width: 100%;
+  display: flex;
+  margin-left: 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .loginOrder{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 120px;
 }
 .header .main-header .header-right .block-signin {
   text-align: right;
@@ -6084,6 +6094,7 @@ iframe.google-map {
   }
   .header .burger-icon {
     display: block;
+    margin-top: 15px;
   }
   .box-count.box-count-square .deals-countdown {
     padding: 4px 0px;

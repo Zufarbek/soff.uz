@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 import { useState, useEffect } from "react";
+import { ToastContainer } from 'react-toastify';
+
 
 import SwitchButton from '../elements/SwitchButton';
 
@@ -8,6 +10,7 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
     const [scroll, setScroll] = useState(0)
     const [isToggled, setToggled] = useState(false);
     const toggleTrueFalse = () => setToggled(!isToggled);
+    const [myData, setmyData] = useState(null)
     useEffect(() => {
         document.addEventListener("scroll", () => {
             const scrollCheck = window.scrollY > 100
@@ -15,6 +18,7 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                 setScroll(scrollCheck)
             }
         })
+        setmyData(localStorage.getItem('Token'))
     })
     return (
         <>
@@ -30,24 +34,21 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                         <div className="header-nav">
                             <nav className="nav-main-menu d-none d-xl-block">
                                 <ul className="main-menu">
-                                    <li><Link className="color-gray-500" href="/">Main</Link></li>
-                                    <li><Link className="color-gray-500" href="/portfolio">Portfolio</Link></li>
-                                    <li className="has-children"><Link className="active" href="/">Home</Link>
-                                        <ul className="sub-menu two-col">
-                                            <li><Link className="color-gray-500" href="/">Homepage - 1</Link></li>
-                                            <li><Link className="color-gray-500" href="/index-2">Homepage - 2</Link></li>
-                                            <li><Link className="color-gray-500" href="/index-3">Homepage - 3</Link></li>
-                                            <li><Link className="color-gray-500" href="/index-4">Homepage - 4</Link></li>
-                                        </ul>
+                                    {/* <li><Link className="color-gray-500" href="/">Main</Link></li> */}
+                                    <li ><Link className="active" href="/">Home</Link>
+
                                     </li>
-                                    <li className="has-children"><Link className="color-gray-500" href="/page-about">About Me</Link>
-                                        <ul className="sub-menu">
+                                    <li ><Link className="color-gray-500" href="/page-about">About</Link>
+                                        {/* <ul className="sub-menu">
                                             <li><Link className="color-gray-500" href="/page-portfolio">My Portfolio</Link></li>
                                             <li><Link className="color-gray-500" href="/page-portfolio-2">My Portfolio 2</Link></li>
                                             <li><Link className="color-gray-500" href="/portfolio-details">Portfolio Details</Link></li>
-                                        </ul>
+                                        </ul> */}
                                     </li>
-                                    <li className="has-children"><Link className="color-gray-500" href="#">Category</Link>
+                                    <li><Link className="color-gray-500" href="/portfolio">Portfolio</Link></li>
+
+
+                                    {/* <li className="has-children"><Link className="color-gray-500" href="#">Category</Link>
                                         <ul className="sub-menu two-col">
                                             <li><Link className="color-gray-500" href="/blog-archive">Blog Category 1</Link></li>
                                             <li><Link className="color-gray-500" href="/blog-archive-2">Blog Category 2</Link></li>
@@ -55,8 +56,8 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                                             <li><Link className="color-gray-500" href="/blog-archive-4">Blog Category 4</Link></li>
                                             <li><Link className="color-gray-500" href="/blog-archive-5">Blog Category 5</Link></li>
                                         </ul>
-                                    </li>
-                                    <li className="has-children"><Link className="color-gray-500" href="#">Single Post</Link>
+                                    </li> */}
+                                    {/* <li className="has-children"><Link className="color-gray-500" href="#">Single Post</Link>
                                         <ul className="sub-menu two-col">
                                             <li><Link className="color-gray-500" href="/single-sidebar">Blog Single 1</Link></li>
                                             <li><Link className="color-gray-500" href="/single-no-sidebar">Blog Single 2</Link></li>
@@ -73,8 +74,11 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                                             <li><Link className="color-gray-500" href="/page-signup">Signup</Link></li>
                                             <li><Link className="color-gray-500" href="/page-404">Page 404</Link></li>
                                         </ul>
-                                    </li>
+                                    </li> */}
                                     <li><Link className="color-gray-500" href="/page-contact">Contact</Link></li>
+                                    <li><Link className="color-gray-500" href="/Pos-Fits">PosFits</Link></li>
+                                    <li><Link className="color-gray-500" href="/Faqs">Faqs</Link></li>
+
                                 </ul>
                             </nav>
                             <div className={`burger-icon burger-icon-white ${openClass && "burger-close"}`}
@@ -84,9 +88,9 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                                 <span className="burger-icon-bottom" />
                             </div>
                         </div>
-                        <div className="header-right text-end">
+                        <div className="header-right text-end m-2">
                             <Link className="btn btn-search" href="#" onClick={toggleTrueFalse} />
-                            <SwitchButton />
+                            <SwitchButton/>
                             <div className={isToggled ? "form-search p-20 d-block" : " form-search p-20 d-none"}>
                                 <form action="#">
                                     <input className="form-control" type="text" placeholder="Search" />
@@ -100,7 +104,19 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                                     <Link className="color-gray-600 mr-10 font-xs" href="#"># Lifestyle</Link>
                                     <Link className="color-gray-600 mr-10 font-xs" href="#"># Sport</Link>
                                 </div>
-                            </div><Link className="btn btn-linear d-none d-sm-inline-block hover-up hover-shadow" href="/page-login">Subscribe</Link>
+                            </div>
+                        </div>
+                        <ToastContainer />
+                        <div className='row loginOrder w-25'>
+                                
+                            <Link className="col-4 btn btn-linear d-none d-xl-inline-block hover-up hover-shadow " style={{width:"150px"}} href="/page-contact#placing an order">placing an order</Link>
+                            <div className='col-1'></div>
+                            {myData ? (
+                                <img className='col-4 d-none d-xl-inline-block' style={{width:"70px" , height:"40px" , borderRadius:"50%"}} src='https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png' alt='userlogo'/>
+                            ) : (
+                                    <Link className="col-4 btn btn-linear d-none d-xl-inline-block hover-up hover-shadow " href="/page-login">Log in</Link>
+                            )}
+
                         </div>
                     </div>
                 </div>
