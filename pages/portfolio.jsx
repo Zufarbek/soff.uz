@@ -7,7 +7,7 @@ import PortfolioAPI from '../repository/portfolio';
 
 export default function portfolio() {
     const [DataPortfolio, setDataPortfolio] = useState([])
-    const Url = 'http://localhost:5000/'
+    const Url = 'https://soff.husandev.uz/'
     const portfolioAll = async () => {
         const UserLogin = await PortfolioAPI.getAllPortfolio();
         console.log(UserLogin);

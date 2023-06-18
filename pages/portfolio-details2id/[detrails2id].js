@@ -12,7 +12,7 @@ import PortfolioAPI from '../../repository/portfolio'
 const BlogDetails = () => {
     let Router = useRouter()
     
-    const Url = 'http://localhost:5000/'
+    const Url = 'https://soff.husandev.uz/'
     const [DataPortfolioId, setDataPortfolioId] = useState({});
     const id  = Router.query.detrails2id;
 

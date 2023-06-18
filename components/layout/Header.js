@@ -2,15 +2,19 @@ import Link from 'next/link';
 import React from 'react';
 import { useState, useEffect } from "react";
 import { ToastContainer } from 'react-toastify';
+import { useRouter } from 'next/router';
 
 
 import SwitchButton from '../elements/SwitchButton';
 
 const Header = ({ handleOpen, handleRemove, openClass }) => {
+    const router = useRouter();
     const [scroll, setScroll] = useState(0)
     const [isToggled, setToggled] = useState(false);
     const toggleTrueFalse = () => setToggled(!isToggled);
     const [myData, setmyData] = useState(null)
+    const [OpenDiv, setOpenDiv] = useState("none")
+
     useEffect(() => {
         document.addEventListener("scroll", () => {
             const scrollCheck = window.scrollY > 100
@@ -20,6 +24,22 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
         })
         setmyData(localStorage.getItem('Token'))
     })
+
+
+    function Open(){
+        if (OpenDiv == "none"){
+        setOpenDiv("inline")
+        }
+        else{
+            setOpenDiv("none")
+        }
+    }
+
+    function logOut() {
+        localStorage.removeItem('Token');
+        router.reload();
+    }
+
     return (
         <>
             <header className={scroll ? "header sticky-bar bg-gray-900 stick" : "header sticky-bar bg-gray-900"}>
@@ -107,16 +127,18 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                             </div>
                         </div>
                         <ToastContainer />
-                        <div className='row loginOrder w-25'>
+                        <div className=' position-relative row loginOrder w-25'>
                                 
                             <Link className="col-4 btn btn-linear d-none d-xl-inline-block hover-up hover-shadow " style={{width:"150px"}} href="/page-contact#placing an order">placing an order</Link>
                             <div className='col-1'></div>
                             {myData ? (
-                                <img className='col-4 d-none d-xl-inline-block' style={{width:"70px" , height:"40px" , borderRadius:"50%"}} src='https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png' alt='userlogo'/>
+                                <img onClick={Open} className='col-4 d-none d-xl-inline-block' style={{width:"70px" , height:"40px" , borderRadius:"50%"}} src='https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png' alt='userlogo'/>
                             ) : (
                                     <Link className="col-4 btn btn-linear d-none d-xl-inline-block hover-up hover-shadow " href="/page-login">Log in</Link>
                             )}
-
+                            <div onClick={logOut} className=' btn btn-linear ' style={{ display:`${OpenDiv}` , width:"130px" , height:"30px" , position:"absolute"  , left:"80px" , top:"30px"}}>
+                                <p style={{marginTop:"-6px"}}>log out</p>
+                            </div>
                         </div>
                     </div>
                 </div>

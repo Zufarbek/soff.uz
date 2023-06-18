@@ -32,7 +32,7 @@ export default function Home() {
             toast.success("Mail has been sent");
         }
         else{
-            toast.error("Error");
+            toast.error("Please enter the details correctly and 'message' 10 word typing...");
         }
         // console.log(UserLogin);
     };

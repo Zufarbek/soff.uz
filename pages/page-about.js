@@ -50,7 +50,7 @@ export default function Home() {
                                             </div>
                                         </div>
                                         <div className="col-lg-6 text-center">
-                                            <div className="banner-img position-relative wow animate__animated animate__fadeIn"><img src="assets/imgs/page/homepage1/banner.png" alt="Genz" />
+                                            <div className="banner-img position-relative wow animate__animated animate__fadeIn"><img src="http://soffstudy.uz/assets/imgs/page/homepage/Zufarbek%20Abdurahmonov%20Image%202.png" alt="Genz" />
                                                 <div className="pattern-1"><img src="assets/imgs/template/pattern-1.svg" alt="Genz" /></div>
                                                 <div className="pattern-2"><img src="assets/imgs/template/pattern-2.svg" alt="Genz" /></div>
                                                 <div className="pattern-3"><img src="assets/imgs/template/pattern-3.svg" alt="Genz" /></div>
@@ -59,7 +59,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="box-features bg-gray-850 border-gray-800">
+                                {/* <div className="box-features bg-gray-850 border-gray-800">
                                     <div className="row">
                                         <div className="col-lg-4 col-md-6 mb-50 wow animate__animated animate__fadeIn" data-wow-delay="0s"><span className="item-icon bg-gray-950 icon-motion" />
                                             <h5 className="color-white mb-15">Motion &amp;<br />Web Graphy</h5>
@@ -195,7 +195,7 @@ export default function Home() {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

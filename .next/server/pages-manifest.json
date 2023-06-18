@@ -2,10 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/portfolio": "pages/portfolio.js",
   "/page-contact": "pages/page-contact.js",
-  "/page-about": "pages/page-about.js",
-  "/Faqs": "pages/Faqs.js",
-  "/Pos-Fits": "pages/Pos-Fits.js"
+  "/portfolio": "pages/portfolio.js",
+  "/portfolio-details2id/[detrails2id]": "pages/portfolio-details2id/[detrails2id].js",
+  "/page-about": "pages/page-about.js"
 }
