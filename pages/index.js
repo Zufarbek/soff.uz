@@ -114,7 +114,7 @@ export default function Main() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="row mt-70">
+                                {/* <div className="row mt-70">
                                     <div className="col-lg-6 wow animate__animated animate__fadeIn" data-wow-delay={0}>
                                         <div className="card-blog-1 hover-up">
                                             <div className="card-image mb-20"><Link className="post-type" href="/blog-archive" /><Link href="/single-sidebar"><img src="assets/imgs/page/portfolio/soff - japan - 1.png" alt="Genz" /></Link></div>
@@ -203,7 +203,7 @@ export default function Main() {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

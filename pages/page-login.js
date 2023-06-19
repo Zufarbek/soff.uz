@@ -67,10 +67,10 @@ export default function Home() {
                                                 />
                                                 <span className="viewpass" onClick={togglePasswordVisiblity} />
                                             </div>
-                                            <div className="form-group"><Link className="color-white link" href="#">Forgot password?</Link></div>
                                             <div className="form-group">
                                             <button onClick={Loginbuttun} className="btn btn-linear color-gray-850 hover-up" >Log me in</button>
                                             </div>
+                                            <div className="form-group"><Link className="color-white link" href="">Forgot password?</Link></div>
                                             <div className="form-group mb-0"><span>Don’t have an account?</span><Link className="color-linear" href="/page-signup"> Sign Up</Link></div>
                                         
                                     </div>

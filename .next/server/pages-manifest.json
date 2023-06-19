@@ -4,6 +4,7 @@
   "/_document": "pages/_document.js",
   "/page-contact": "pages/page-contact.js",
   "/portfolio": "pages/portfolio.js",
-  "/portfolio-details2id/[detrails2id]": "pages/portfolio-details2id/[detrails2id].js",
-  "/page-about": "pages/page-about.js"
+  "/page-about": "pages/page-about.js",
+  "/Faqs": "pages/Faqs.js",
+  "/": "pages/index.js"
 }

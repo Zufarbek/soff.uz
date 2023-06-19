@@ -42,7 +42,7 @@ export default function portfolio() {
                                                                     <h4 className="color-white mb-15">{item.title}</h4>
                                                                     <div className="box-author">
                                                                         <div className="author-info">
-                                                                            <span className="color-gray-700 text-sm">"EMU UNIVERSITY | online</span>
+                                                                            <span className="color-gray-700 text-sm">{item.title} | online</span>
                                                                         </div>
                                                                     </div>
                                                                 </div>

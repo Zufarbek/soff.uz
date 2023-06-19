@@ -14,6 +14,12 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
     const toggleTrueFalse = () => setToggled(!isToggled);
     const [myData, setmyData] = useState(null)
     const [OpenDiv, setOpenDiv] = useState("none")
+    const [coloring1Usestate, setcoloring1Usestate] = useState("color-gray-500")
+    const [coloring2Usestate, setcoloring2Usestate] = useState("color-gray-500")
+    const [coloring3Usestate, setcoloring3Usestate] = useState("color-gray-500")
+    const [coloring4Usestate, setcoloring4Usestate] = useState("color-gray-500")
+    const [coloring5Usestate, setcoloring5Usestate] = useState("color-gray-500")
+    const [coloring6Usestate, setcoloring6Usestate] = useState("color-gray-500")
 
     useEffect(() => {
         document.addEventListener("scroll", () => {
@@ -40,6 +46,37 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
         router.reload();
     }
 
+    function coloring1(params) {
+        setcoloring1Usestate("active")
+        setcoloring2Usestate("color-gray-500")
+        setcoloring3Usestate("color-gray-500")
+        setcoloring4Usestate("color-gray-500")
+        setcoloring5Usestate("color-gray-500")
+        setcoloring6Usestate("color-gray-500")
+        
+    }
+    function coloring2(params) {
+        setcoloring1Usestate("color-gray-500")
+        setcoloring2Usestate("active")
+        setcoloring3Usestate("color-gray-500")
+        setcoloring4Usestate("color-gray-500")
+        setcoloring5Usestate("color-gray-500")
+        setcoloring6Usestate("color-gray-500")
+    }
+    function coloring3(params) {
+
+    }
+    function coloring4(params) {
+
+    }
+    function coloring5(params) {
+
+    }
+    function coloring6(params) {
+
+    }
+
+
     return (
         <>
             <header className={scroll ? "header sticky-bar bg-gray-900 stick" : "header sticky-bar bg-gray-900"}>
@@ -55,17 +92,17 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                             <nav className="nav-main-menu d-none d-xl-block">
                                 <ul className="main-menu">
                                     {/* <li><Link className="color-gray-500" href="/">Main</Link></li> */}
-                                    <li ><Link className="active" href="/">Home</Link>
+                                    <li onClick={coloring1}><Link className={coloring1Usestate} href="/">Home</Link>
 
                                     </li>
-                                    <li ><Link className="color-gray-500" href="/page-about">About</Link>
+                                    <li onClick={coloring2}><Link className={coloring2Usestate} href="/page-about">About</Link>
                                         {/* <ul className="sub-menu">
                                             <li><Link className="color-gray-500" href="/page-portfolio">My Portfolio</Link></li>
                                             <li><Link className="color-gray-500" href="/page-portfolio-2">My Portfolio 2</Link></li>
                                             <li><Link className="color-gray-500" href="/portfolio-details">Portfolio Details</Link></li>
                                         </ul> */}
                                     </li>
-                                    <li><Link className="color-gray-500" href="/portfolio">Portfolio</Link></li>
+                                    <li onClick={coloring3}><Link className={coloring3Usestate} href="/portfolio">Portfolio</Link></li>
 
 
                                     {/* <li className="has-children"><Link className="color-gray-500" href="#">Category</Link>
@@ -95,9 +132,9 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                                             <li><Link className="color-gray-500" href="/page-404">Page 404</Link></li>
                                         </ul>
                                     </li> */}
-                                    <li><Link className="color-gray-500" href="/page-contact">Contact</Link></li>
-                                    <li><Link className="color-gray-500" href="/Pos-Fits">PosFits</Link></li>
-                                    <li><Link className="color-gray-500" href="/Faqs">Faqs</Link></li>
+                                    <li onClick={coloring4}><Link className={coloring4Usestate} href="/page-contact">Contact</Link></li>
+                                    <li onClick={coloring5}><Link className={coloring5Usestate} href="/Pos-Fits">PosFits</Link></li>
+                                    <li onClick={coloring6}><Link className={coloring6Usestate} href="/Faqs">Faqs</Link></li>
 
                                 </ul>
                             </nav>
