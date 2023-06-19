@@ -12,7 +12,7 @@ export default function Home() {
         <>
             <Head>
                 <title>
-                    Genz - About me
+                    soff - About me
                 </title>
             </Head>
             <Layout>
