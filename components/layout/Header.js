@@ -12,8 +12,6 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
     const [scroll, setScroll] = useState(0)
     const [isToggled, setToggled] = useState(false);
     const toggleTrueFalse = () => setToggled(!isToggled);
-    const [myData, setmyData] = useState(null)
-    const [OpenDiv, setOpenDiv] = useState("none")
     const [coloring1Usestate, setcoloring1Usestate] = useState("color-gray-500")
     const [coloring2Usestate, setcoloring2Usestate] = useState("color-gray-500")
     const [coloring3Usestate, setcoloring3Usestate] = useState("color-gray-500")
@@ -28,23 +26,8 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                 setScroll(scrollCheck)
             }
         })
-        setmyData(localStorage.getItem('Token'))
     })
 
-
-    function Open(){
-        if (OpenDiv == "none"){
-        setOpenDiv("inline")
-        }
-        else{
-            setOpenDiv("none")
-        }
-    }
-
-    function logOut() {
-        localStorage.removeItem('Token');
-        router.reload();
-    }
 
     function coloring1(params) {
         setcoloring1Usestate("active")
@@ -146,36 +129,26 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                             </div>
                         </div>
                         <div className="header-right text-end m-2">
-                            <Link className="btn btn-search" href="#" onClick={toggleTrueFalse} />
+                            <Link className="btn btn-search" href="" onClick={toggleTrueFalse} />
                             <SwitchButton/>
-                            <div className={isToggled ? "form-search p-20 d-block" : " form-search p-20 d-none"}>
+                            <div style={{marginRight:"170px"}} className={isToggled ? "form-search p-20  d-block" : " form-search p-20 d-none"}>
                                 <form action="#">
                                     <input className="form-control" type="text" placeholder="Search" />
-                                    <input className="btn-search-2" />
+                                    <input className="btn-search-2 btn" />
                                 </form>
-                                <div className="popular-keywords text-start mt-20">
+                                {/* <div className="popular-keywords text-start mt-20">
                                     <p className="mb-10 color-white">Popular tags:</p>
                                     <Link className="color-gray-600 mr-10 font-xs" href="#"># Travel,</Link>
                                     <Link className="color-gray-600 mr-10 font-xs" href="#"># Tech,</Link>
                                     <Link className="color-gray-600 mr-10 font-xs" href="#"># Movie</Link>
                                     <Link className="color-gray-600 mr-10 font-xs" href="#"># Lifestyle</Link>
                                     <Link className="color-gray-600 mr-10 font-xs" href="#"># Sport</Link>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <ToastContainer />
                         <div className=' position-relative row loginOrder w-25'>
-                                
-                            <Link className="col-4 btn btn-linear d-none d-xl-inline-block hover-up hover-shadow " style={{width:"150px"}} href="/page-contact#placing an order">placing an order</Link>
-                            <div className='col-1'></div>
-                            {myData ? (
-                                <img onClick={Open} className='col-4 d-none d-xl-inline-block' style={{width:"70px" , height:"40px" , borderRadius:"50%"}} src='https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png' alt='userlogo'/>
-                            ) : (
-                                    <Link className="col-4 btn btn-linear d-none d-xl-inline-block hover-up hover-shadow " href="/page-login">Log in</Link>
-                            )}
-                            <div onClick={logOut} className=' btn btn-linear ' style={{ display:`${OpenDiv}` , width:"130px" , height:"30px" , position:"absolute"  , left:"80px" , top:"30px"}}>
-                                <p style={{marginTop:"-6px"}}>log out</p>
-                            </div>
+                            <Link className="col-4 btn btn-linear d-none d-xl-inline-block hover-up hover-shadow " style={{width:"150px"}} href="/page-contact#placing an order">placing an order</Link>                            
                         </div>
                     </div>
                 </div>

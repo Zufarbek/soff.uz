@@ -20,22 +20,12 @@ const Footer = () => {
                                 <div className="row">
                                     <div className="col-6">
                                         <ul className="menu-footer">
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Action</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Business</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Adventure</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Canada</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">America</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Curiosity</Link></li>
-                                        </ul>
-                                    </div>
-                                    <div className="col-6">
-                                        <ul className="menu-footer">
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Animal</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Dental</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Biology</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Design</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Breakfast</Link></li>
-                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/blog-archive">Dessert</Link></li>
+                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/">Home</Link></li>
+                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/page-about">About</Link></li>
+                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/portfolio">Portfolio</Link></li>
+                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/page-contact">Contact</Link></li>
+                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/Pos-Fits">PosFits</Link></li>
+                                            <li className="wow animate__animated animate__fadeInUp"><Link className="color-gray-500" href="/Faqs">Faqs</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -45,7 +35,7 @@ const Footer = () => {
                                 <p className="text-base color-gray-500 wow animate__animated animate__fadeInUp">Sign up to be first
                                     to receive the latest stories inspiring us, case studies, and industry news.</p>
                                 <div className="form-newsletters mt-15 wow animate__animated animate__fadeInUp">
-                                    <form action="#">
+                                  
                                         <div className="form-group">
                                             <input className="input-name border-gray-500" type="text" placeholder="Your name" />
                                         </div>
@@ -58,7 +48,7 @@ const Footer = () => {
                                                 <i className="fi-rr-arrow-small-right" />
                                             </button>
                                         </div>
-                                    </form>
+                                 
                                 </div>
                             </div>
                         </div>

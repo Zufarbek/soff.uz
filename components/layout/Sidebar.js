@@ -6,11 +6,8 @@ const Sidebar = ({ openClass }) => {
         status: false,
         key: "",
     });
-    const [myData, setmyData] = useState(null)
 
-    useEffect(() => {
-        setmyData(localStorage.getItem('Token'))
-    }, []);
+
 
     const handleToggle = (key) => {
         if (isActive.key === key) {
@@ -52,17 +49,7 @@ const Sidebar = ({ openClass }) => {
                                         <li><Link href="/page-contact">Contact</Link></li>
                                         <li><Link href="/Pos-Fits">PosFits</Link></li>
                                         <li><Link href="/Faqs">Faqs</Link></li>
-                               
-
-                                            <Link className="col-7 btn btn-linear hover-up hover-shadow " style={{ width: "300px" }} href="/page-contact#placing an order">placing an order</Link>
-                                            
-                                            {myData ? (
-                                                <img className='col-3' style={{ width: "60px", height: "50px", borderRadius: "50%", marginLeft:"40%" , marginTop:"10px"}} src='https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png' alt='userlogo' />
-                                            ) : (
-                                                <Link className="col-4 btn btn-linear hover-up hover-shadow " href="/page-login">Log in</Link>
-                                            )}
-
-                                       
+                                        <Link className="col-7 btn btn-linear hover-up hover-shadow " style={{ width: "300px" }} href="/page-contact#placing an order">placing an order</Link>
                                     </ul>
                                 </nav>
                             </div>

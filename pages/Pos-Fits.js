@@ -48,7 +48,7 @@ export default function PosFits() {
                                                                     <span className="color-gray-700 text-sm">25 April 2022</span>
                                                                 </div>
                                                             </div>
-                                                            <Link className="btn btn-tag bg-gray-800 hover-up" href="/blog-archive">{item.category}</Link>
+                                                            <Link className="btn btn-tag bg-gray-800 hover-up" href="/blog-archive">{item.category}</Link>       
                                                         </div>
                                                         <div className="card-info"><Link href={`/blog/${item.id}`}>
                                                             <h3 className="mb-20 color-white">{item.title}</h3></Link>

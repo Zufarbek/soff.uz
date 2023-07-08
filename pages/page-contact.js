@@ -40,6 +40,11 @@ export default function Home() {
     
     function Send() {
         portfolioAll()
+        setName("")
+        setemail("")
+        setphone("")
+        setsubject("")
+        setmessage("")
     }
 
 
@@ -113,27 +118,27 @@ export default function Home() {
                                     <div  className="row mt-50" >
                                         <div className="col-lg-6">
                                             <div className="form-group">
-                                                <input className="form-control bg-gray-850 border-gray-800 color-gray-500" type="text" placeholder="Your name *" onInput={(val) => {setName(val.target.value)}}/>
+                                                <input value={Name} className="form-control bg-gray-850 border-gray-800 color-gray-500" type="text" placeholder="Your name *" onInput={(val) => {setName(val.target.value)}}/>
                                             </div>
                                         </div>
                                         <div className="col-lg-6">
                                             <div className="form-group">
-                                                <input className="form-control bg-gray-850 border-gray-800 color-gray-500" type="text" placeholder="Email *" onInput={(val) => { setemail(val.target.value) }} />
+                                                <input value={email} className="form-control bg-gray-850 border-gray-800 color-gray-500" type="text" placeholder="Email *" onInput={(val) => { setemail(val.target.value) }} />
                                             </div>
                                         </div>
                                         <div className="col-lg-6">
                                             <div className="form-group">
-                                                <input className="form-control bg-gray-850 border-gray-800 color-gray-500" type="number" placeholder="Phone number *" onInput={(val) => { setphone(val.target.value) }} />
+                                                <input value={phone} className="form-control bg-gray-850 border-gray-800 color-gray-500" type="number" placeholder="Phone number *" onInput={(val) => { setphone(val.target.value) }} />
                                             </div>
                                         </div>
                                         <div className="col-lg-6">
                                             <div className="form-group">
-                                                <input className="form-control bg-gray-850 border-gray-800 color-gray-500" type="text" placeholder="Subject *" onInput={(val) => { setsubject(val.target.value) }} />
+                                                <input value={subject} className="form-control bg-gray-850 border-gray-800 color-gray-500" type="text" placeholder="Subject *" onInput={(val) => { setsubject(val.target.value) }} />
                                             </div>
                                         </div>
                                         <div className="col-lg-12">
                                             <div className="form-group">
-                                                <textarea className="form-control bg-gray-850 border-gray-800 color-gray-500" rows={5} placeholder="Message *" defaultValue={""} onInput={(val) => { setmessage(val.target.value) }} />
+                                                <textarea value={message} className="form-control bg-gray-850 border-gray-800 color-gray-500" rows={5} placeholder="Message *" defaultValue={""} onInput={(val) => { setmessage(val.target.value) }} />
                                             </div>
                                         </div>
                                         <div className="col-lg-12">

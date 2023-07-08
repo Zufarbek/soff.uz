@@ -10,7 +10,6 @@ export default function portfolio() {
     const Url = 'https://soff.husandev.uz/'
     const portfolioAll = async () => {
         const UserLogin = await PortfolioAPI.getAllPortfolio();
-        console.log(UserLogin);
         setDataPortfolio(UserLogin)
     };
 
